@@ -7,12 +7,17 @@ class RestaurantBooking extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Restaurant Booking'),
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.red,
       ),
-      body: const Center(
-        child: Text('Welcome to the Restaurant Booking Mini-program!'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Restaurant Booking'),
+        ),
+        body: const Center(
+          child: Text('Welcome to the Restaurant Booking Mini-program!'),
+        ),
       ),
     );
   }
